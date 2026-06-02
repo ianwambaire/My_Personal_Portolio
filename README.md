@@ -1,16 +1,83 @@
-# React + Vite
+# Ian Wambaire Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website showcasing my experience, projects, technical skills, and interests as a Computer Science student and aspiring Software Engineer and Data Engineer.
 
-Currently, two official plugins are available:
+## Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 https://ianwambaire.github.io/My_Personal_Portolio/
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio highlights:
 
-## Expanding the ESLint configuration
+* Technical projects
+* Professional experience
+* Skills and technologies
+* Education background
+* Personal interests and activities
+* Downloadable CV
+* GitHub and LinkedIn profiles
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Featured Projects
+
+* Electricity Trading Data Pipeline
+* Digital Therapy Platform
+* Real Estate Management System
+* Solar System Flight Simulator
+* Recipe Website
+* Audio Control Interface
+
+## Technologies Used
+
+* React
+* Vite
+* JavaScript
+* HTML5
+* CSS3
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ianwambaire/My_Personal_Portolio.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd My_Personal_Portolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## Connect With Me
+
+📧 Email: [iannganga154@gmail.com](mailto:iannganga154@gmail.com)
+
+💼 LinkedIn: https://www.linkedin.com/in/ianwambaire
+
+💻 GitHub: https://github.com/ianwambaire
+
+## Author
+
+**Ian Wambaire**
+
+BSc Informatics and Computer Science
+Strathmore University
