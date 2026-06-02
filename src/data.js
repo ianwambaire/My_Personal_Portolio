@@ -2,11 +2,12 @@ export const profile = {
   name: "Ian Wambaire",
   role: "Computer Science Student",
   headline:
-    "I build practical software, mobile apps, and data-driven systems that solve real problems.",
+    "I build practical software, mobile apps, data-driven systems, and interactive web experiences that solve real problems.",
   location: "Nairobi, Kenya",
-  email: "ian.wambaire@strathmore.edu",
+  email: "iannganga154@gmail.com",
   github: "https://github.com/ianwambaire",
   linkedin: "https://www.linkedin.com/in/ianwambaire",
+  cv: "/Ian-Wambaire-CV.pdf",
 };
 
 export const projects = [
@@ -18,7 +19,7 @@ export const projects = [
     tech: ["Flutter", "Firebase", "Dart", "AI", "Video Calls"],
     impact:
       "Designed to improve accessibility to mental health support through structured therapist-patient interaction.",
-    repo: "https://github.com/ianwambaire",
+    repo: "https://github.com/ianwambaire/mental_health_support_app",
   },
   {
     title: "Electricity Trading Data Pipeline",
@@ -28,7 +29,7 @@ export const projects = [
     tech: ["Python", "MLflow", "Pandas", "APIs", "Machine Learning"],
     impact:
       "Built to reduce manual pipeline work and support better data quality, forecasting, and analytics.",
-    repo: "https://github.com/ianwambaire",
+    repo: "https://github.com/ianwambaire/Electricity_Trading_Pipeline",
   },
   {
     title: "Real Estate Management System",
@@ -38,17 +39,39 @@ export const projects = [
     tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
     impact:
       "Helps property managers reduce manual record keeping and payment tracking errors.",
-    repo: "https://github.com/ianwambaire",
+    repo: "https://github.com/ianwambaire/Real-Estate-Management-System",
   },
   {
-    title: "Birthday Wishlist App",
-    type: "iOS App",
+    title: "Solar System Flight Simulator",
+    type: "Interactive Graphics",
     description:
-      "An iOS application that lets users create birthday wishlists and allows friends to view, plan, and contribute toward gifts.",
-    tech: ["Swift", "Storyboard", "iOS"],
+      "An HTML5 Canvas multimedia application where users pilot a spaceship through an animated solar system while avoiding asteroids, managing fuel, and staying away from the sun.",
+    tech: ["HTML5 Canvas", "CSS3", "JavaScript", "Game Logic"],
     impact:
-      "Turns gifting into a collaborative and organized experience.",
-    repo: "https://github.com/ianwambaire/LearningSwift",
+      "Demonstrates real-time rendering, animation, collision detection, object transformations, and the graphics pipeline in an interactive browser experience.",
+    repo: "https://github.com/ianwambaire/solar-system-flight-simulator",
+    demo: "https://ianwambaire.github.io/solar-system-flight-simulator/",
+  },
+  {
+    title: "Audio Control Interface",
+    type: "Interactive Web App",
+    description:
+      "A custom browser-based audio control interface that lets users play, pause, mute, loop, seek, adjust volume, skip audio, and change playback speed without using the default browser audio player.",
+    tech: ["HTML", "CSS", "JavaScript", "Sound API"],
+    impact:
+      "Shows practical use of JavaScript media controls, keyboard shortcuts, state handling, and custom user interface design.",
+    repo: "https://github.com/ianwambaire/Audio_Control_Interface",
+    demo: "https://ianwambaire.github.io/Audio_Control_Interface/",
+  },
+  {
+    title: "Recipe Website",
+    type: "Full-Stack Web",
+    description:
+      "A recipe management platform with user authentication, recipe creation, editing, recipe detail pages, and admin and owner dashboards.",
+    tech: ["HTML5", "CSS3", "PHP", "MySQL"],
+    impact:
+      "Built to organize recipe content through structured dashboards, authentication, and database-driven recipe management.",
+    repo: "https://github.com/ianwambaire/Recipe-Website",
   },
 ];
 
@@ -66,7 +89,27 @@ export const skills = [
   "Git & GitHub",
   "Pandas",
   "Power BI",
-  "Machine Learning Basics",
+  "MLflow",
+  "HTML5 Canvas",
+  "Data Pipelines",
+];
+
+export const hobbies = [
+  {
+    title: "Running",
+    description:
+      "Part of the We Run Nairobi Club, where I go for runs every Saturday.",
+  },
+  {
+    title: "Cooking",
+    description:
+      "I enjoy cooking for my family and friends, as well as trying out foods from different places.",
+  },
+  {
+    title: "Nature Walks and Hikes",
+    description:
+      "I enjoy nature walks alone or with family and friends.",
+  },
 ];
 
 export const experience = [

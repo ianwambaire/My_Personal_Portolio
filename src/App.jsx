@@ -1,4 +1,4 @@
-import { profile, projects, skills, experience } from "./data";
+import { profile, projects, skills, experience, hobbies } from "./data";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
         <div>
           <a href="#projects">Projects</a>
           <a href="#experience">Experience</a>
+          <a href="#hobbies">Beyond Code</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -21,7 +22,12 @@ function App() {
         <p className="hero-text">{profile.headline}</p>
 
         <div className="hero-actions">
-          <a href="#projects" className="btn primary">View Projects</a>
+          <a href="#projects" className="btn primary">
+            View Projects
+          </a>
+          <a href={profile.cv} download className="btn secondary">
+            Download CV
+          </a>
           <a href={profile.github} className="btn secondary" target="_blank">
             GitHub Profile
           </a>
@@ -29,8 +35,8 @@ function App() {
 
         <div className="stats">
           <div>
-            <strong>4+</strong>
-            <p>Major Projects</p>
+            <strong>6+</strong>
+            <p>Projects</p>
           </div>
           <div>
             <strong>Mobile</strong>
@@ -63,7 +69,7 @@ function App() {
             <article className="project-card" key={project.title}>
               <div className="project-top">
                 <p>{project.type}</p>
-                <span>GitHub</span>
+                <span>{project.demo ? "Live + GitHub" : "GitHub"}</span>
               </div>
 
               <h3>{project.title}</h3>
@@ -79,9 +85,17 @@ function App() {
                 ))}
               </div>
 
-              <a href={project.repo} target="_blank" className="repo-link">
-                View Repository →
-              </a>
+              <div className="project-links">
+                <a href={project.repo} target="_blank" className="repo-link">
+                  View Repository →
+                </a>
+
+                {project.demo && (
+                  <a href={project.demo} target="_blank" className="repo-link">
+                    Live Demo →
+                  </a>
+                )}
+              </div>
             </article>
           ))}
         </div>
@@ -120,9 +134,25 @@ function App() {
         </div>
       </section>
 
+      <section className="section" id="hobbies">
+        <p className="section-label">Beyond Code</p>
+        <h2>The person behind the projects.</h2>
+
+        <div className="hobbies-grid">
+          {hobbies.map((hobby) => (
+            <article className="hobby-card" key={hobby.title}>
+              <h3>{hobby.title}</h3>
+              <p>{hobby.description}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <section className="contact" id="contact">
         <p className="section-label">Contact</p>
-        <h2>Interested in software, data engineering, and impactful product teams.</h2>
+        <h2>
+          Interested in software, data engineering, and impactful product teams.
+        </h2>
         <p>
           I’m open to internships, graduate opportunities, collaborations, and
           technical projects.
@@ -131,6 +161,9 @@ function App() {
         <div className="hero-actions">
           <a href={`mailto:${profile.email}`} className="btn primary">
             Email Me
+          </a>
+          <a href={profile.cv} download className="btn secondary">
+            Download CV
           </a>
           <a href={profile.linkedin} className="btn secondary" target="_blank">
             LinkedIn
