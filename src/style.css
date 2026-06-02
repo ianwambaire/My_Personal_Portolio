@@ -360,3 +360,52 @@ h1 span {
     columns: 1;
   }
 }
+.hero-content {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 420px;
+  max-width: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.35));
+}
+
+.featured-project {
+  padding-top: 40px;
+}
+
+.featured-card {
+  padding: 36px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.featured-card p {
+  color: #cbd5e1;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-right {
+    order: -1;
+  }
+
+  .profile-image {
+    width: 300px;
+  }
+}

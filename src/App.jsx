@@ -18,46 +18,60 @@ function App() {
       </nav>
 
       <section className="hero">
-        <p className="eyebrow">Portfolio / Software / Data Engineering</p>
+          <div className="hero-content">
+            <div className="hero-left">
+              <p className="eyebrow">Portfolio / Software / Data Engineering</p>
 
-        <h1>
-          Hi, I’m <span>{profile.name}</span>. I build useful digital products
-          with clean code and practical problem-solving.
-        </h1>
+              <h1>
+                Hi, I'm <span>{profile.name}</span>.
+              </h1>
 
-        <p className="hero-text">{profile.headline}</p>
+              <p className="hero-text">
+                Final-year Computer Science student focused on building scalable
+                software, automated data systems, and impactful digital products.
+              </p>
 
-        <div className="hero-actions">
-          <a href="#projects" className="btn primary">
-            View Projects
-          </a>
+              <div className="hero-actions">
+                <a href="#projects" className="btn primary">
+                  View Projects
+                </a>
 
-          <a href={asset("Ian-Wambaire-CV.pdf")} download className="btn secondary">
-            Download CV
-          </a>
+                <a href={profile.cv} download className="btn secondary">
+                  Download CV
+                </a>
 
-          <a href={profile.github} className="btn secondary" target="_blank">
-            GitHub Profile
-          </a>
-        </div>
+                <a href={profile.github} className="btn secondary" target="_blank">
+                  GitHub
+                </a>
+              </div>
+            </div>
 
-        <div className="stats">
-          <div>
-            <strong>6+</strong>
-            <p>Projects</p>
+            <div className="hero-right">
+              <img
+                src={`${import.meta.env.BASE_URL}images/profile.jpeg`}
+                alt="Ian Wambaire"
+                className="profile-image"
+              />
+            </div>
           </div>
 
-          <div>
-            <strong>Mobile</strong>
-            <p>Flutter, Swift, iOS</p>
-          </div>
+          <div className="stats">
+            <div>
+              <strong>ICEA LION</strong>
+              <p>Data Analytics Internship</p>
+            </div>
 
-          <div>
-            <strong>Data</strong>
-            <p>Python, ML, Analytics</p>
+            <div>
+              <strong>Python • Flutter</strong>
+              <p>Software & Data Projects</p>
+            </div>
+
+            <div>
+              <strong>6+</strong>
+              <p>Technical Projects</p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       <section className="section about" id="about">
         <p className="section-label">About</p>
@@ -80,6 +94,7 @@ function App() {
           turn data into useful insights.
         </p>
       </section>
+      
 
       <section className="section" id="projects">
         <p className="section-label">Selected Work</p>
