@@ -56,10 +56,10 @@ export const projects = [
     title: "Audio Control Interface",
     type: "Interactive Web App",
     description:
-      "A custom browser-based audio control interface that lets users play, pause, mute, loop, seek, adjust volume, skip audio, and change playback speed without using the default browser audio player.",
+      "A custom browser-based audio control interface that lets users play, pause, mute, loop, seek, adjust volume, skip audio, and change playback speed.",
     tech: ["HTML", "CSS", "JavaScript", "Sound API"],
     impact:
-      "Shows practical use of JavaScript media controls, keyboard shortcuts, state handling, and custom user interface design.",
+      "Demonstrates media controls, keyboard shortcuts, state management, and custom UI design.",
     repo: "https://github.com/ianwambaire/Audio_Control_Interface",
     demo: "https://ianwambaire.github.io/Audio_Control_Interface/",
   },
@@ -67,10 +67,10 @@ export const projects = [
     title: "Recipe Website",
     type: "Full-Stack Web",
     description:
-      "A recipe management platform with user authentication, recipe creation, editing, recipe detail pages, and admin and owner dashboards.",
+      "A recipe management platform with authentication, recipe creation, editing, recipe detail pages, and dashboard functionality.",
     tech: ["HTML5", "CSS3", "PHP", "MySQL"],
     impact:
-      "Built to organize recipe content through structured dashboards, authentication, and database-driven recipe management.",
+      "Organizes recipes through database-driven management and user authentication.",
     repo: "https://github.com/ianwambaire/Recipe-Website",
   },
 ];
@@ -103,12 +103,12 @@ export const hobbies = [
   {
     title: "Cooking",
     description:
-      "I enjoy cooking for my family and friends, as well as trying out foods from different places.",
+      "I enjoy cooking for family and friends and trying foods from different places.",
   },
   {
-    title: "Nature Walks and Hikes",
+    title: "Nature Walks & Hiking",
     description:
-      "I enjoy nature walks alone or with family and friends.",
+      "I enjoy nature walks and hiking adventures either alone or with friends and family.",
   },
 ];
 
