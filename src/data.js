@@ -2,25 +2,15 @@ export const profile = {
   name: "Ian Wambaire",
   role: "Computer Science Student",
   headline:
-    "I build practical software, mobile apps, data-driven systems, and interactive web experiences that solve real problems.",
+    "I build practical software, data pipelines, and interactive web experiences — from mobile apps to automated analytics systems.",
   location: "Nairobi, Kenya",
   email: "iannganga154@gmail.com",
   github: "https://github.com/ianwambaire",
   linkedin: "https://www.linkedin.com/in/ianwambaire",
-  cv: "/Ian-Wambaire-CV.pdf",
+  cv: "Ian-Wambaire-CV.pdf",
 };
 
 export const projects = [
-  {
-    title: "Digital Therapy Platform",
-    type: "Mobile App",
-    description:
-      "A cross-platform mental health application connecting patients with therapists through booking, mood tracking, video calls, and AI-powered sentiment insights.",
-    tech: ["Flutter", "Firebase", "Dart", "AI", "Video Calls"],
-    impact:
-      "Designed to improve accessibility to mental health support through structured therapist-patient interaction.",
-    repo: "https://github.com/ianwambaire/mental_health_support_app",
-  },
   {
     title: "Electricity Trading Data Pipeline",
     type: "Data Engineering",
@@ -30,6 +20,18 @@ export const projects = [
     impact:
       "Built to reduce manual pipeline work and support better data quality, forecasting, and analytics.",
     repo: "https://github.com/ianwambaire/Electricity_Trading_Pipeline",
+    featured: true,
+    architecture: ["Ingest", "Clean", "Store", "Analyze", "Forecast"],
+  },
+  {
+    title: "Digital Therapy Platform",
+    type: "Mobile App",
+    description:
+      "A cross-platform mental health application connecting patients with therapists through booking, mood tracking, video calls, and AI-powered sentiment insights.",
+    tech: ["Flutter", "Firebase", "Dart", "AI", "Video Calls"],
+    impact:
+      "Designed to improve accessibility to mental health support through structured therapist-patient interaction.",
+    repo: "https://github.com/ianwambaire/mental_health_support_app",
   },
   {
     title: "Real Estate Management System",
@@ -76,22 +78,22 @@ export const projects = [
 ];
 
 export const skills = [
-  "Python",
-  "JavaScript",
-  "Flutter",
-  "Dart",
-  "Swift",
-  "Firebase",
-  "MySQL",
-  "PHP",
-  "HTML",
-  "CSS",
-  "Git & GitHub",
-  "Pandas",
-  "Power BI",
-  "MLflow",
-  "HTML5 Canvas",
-  "Data Pipelines",
+  {
+    category: "Languages",
+    items: ["Python", "JavaScript", "Dart", "Swift", "PHP"],
+  },
+  {
+    category: "Data & ML",
+    items: ["Pandas", "Power BI", "MLflow", "Data Pipelines"],
+  },
+  {
+    category: "Frontend & Mobile",
+    items: ["Flutter", "HTML", "CSS", "HTML5 Canvas"],
+  },
+  {
+    category: "Backend & Infra",
+    items: ["Firebase", "MySQL", "Git & GitHub"],
+  },
 ];
 
 export const hobbies = [
