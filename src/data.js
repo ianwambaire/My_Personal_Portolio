@@ -2,7 +2,7 @@ export const profile = {
   name: "Ian Wambaire",
   role: "Computer Science Student",
   headline:
-    "I build practical software, data pipelines, and interactive web experiences — from mobile apps to automated analytics systems.",
+    "I build practical software, data pipelines, and interactive web experiences from mobile apps to automated analytics systems.",
   location: "Nairobi, Kenya",
   email: "iannganga154@gmail.com",
   github: "https://github.com/ianwambaire",
@@ -34,6 +34,17 @@ export const projects = [
     repo: "https://github.com/ianwambaire/mental_health_support_app",
   },
   {
+    title: "Urban Electricity Consumption Forecasting",
+    type: "Machine Learning",
+    description:
+      "A forecasting application that predicts urban electricity consumption using weather, time-based, and historical usage features through a deployed Streamlit dashboard.",
+    tech: ["Python", "Streamlit", "Machine Learning", "Pandas", "Forecasting"],
+    impact:
+      "Helps demonstrate how machine learning can support smarter electricity demand planning and energy consumption analysis.",
+    repo: "https://github.com/ianwambaire/UrbanElectricityConsumptionForecasting",
+    demo: "https://ianwambaire-urbanelectricityconsumptionforecasting-app-puqyec.streamlit.app/",
+  },
+  {
     title: "Real Estate Management System",
     type: "Full-Stack Web",
     description:
@@ -53,17 +64,6 @@ export const projects = [
       "Demonstrates real-time rendering, animation, collision detection, object transformations, and the graphics pipeline in an interactive browser experience.",
     repo: "https://github.com/ianwambaire/solar-system-flight-simulator",
     demo: "https://ianwambaire.github.io/solar-system-flight-simulator/",
-  },
-  {
-    title: "Audio Control Interface",
-    type: "Interactive Web App",
-    description:
-      "A custom browser-based audio control interface that lets users play, pause, mute, loop, seek, adjust volume, skip audio, and change playback speed.",
-    tech: ["HTML", "CSS", "JavaScript", "Sound API"],
-    impact:
-      "Demonstrates media controls, keyboard shortcuts, state management, and custom UI design.",
-    repo: "https://github.com/ianwambaire/Audio_Control_Interface",
-    demo: "https://ianwambaire.github.io/Audio_Control_Interface/",
   },
   {
     title: "Recipe Website",
